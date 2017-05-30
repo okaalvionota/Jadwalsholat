@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="oka.jadwalsholat.MainActivity">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:padding="10dp"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+
+            android:paddingTop="15dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:layout_alignBottom="@+id/Title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp" />
+
+
+    <TextView
+        android:id="@+id/txImsak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_below="@+id/Title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/txImsakTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/txImsak"
+        android:layout_alignBottom="@+id/txImsak"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <TextView
+        android:id="@+id/txSubuh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/txSubuhTime"
+        android:layout_alignBottom="@+id/txSubuhTime"
+        android:layout_alignLeft="@+id/txImsak"
+        android:layout_alignStart="@+id/txImsak" />
+
+    <TextView
+        android:id="@+id/txSubuhTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/txImsakTime"
+        android:layout_alignLeft="@+id/txImsakTime"
+        android:layout_alignStart="@+id/txImsakTime"
+        android:layout_marginTop="39dp" />
+
+    <TextView
+        android:id="@+id/txTerbit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txTerbitTime"
+        android:layout_alignBottom="@+id/txTerbitTime"
+        android:layout_alignLeft="@+id/txSubuh"
+        android:layout_alignStart="@+id/txSubuh"
+        android:layout_marginTop="36dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txDzuhur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        android:layout_below="@+id/txTerbit"
+        android:layout_alignLeft="@+id/txSubuh"
+        android:layout_alignStart="@+id/txSubuh" />
+
+    <TextView
+        android:id="@+id/txAshar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/txDzuhur"
+        android:layout_alignLeft="@+id/txDzuhur"
+        android:layout_alignStart="@+id/txDzuhur" />
+
+    <TextView
+        android:id="@+id/txMaghrib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txAshar"
+        android:layout_alignStart="@+id/txAshar"
+        android:layout_below="@+id/txAshar"
+        android:layout_marginTop="40dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txIsya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/txMaghrib"
+        android:layout_alignLeft="@+id/txMaghrib"
+        android:layout_alignStart="@+id/txMaghrib" />
+
+    <TextView
+        android:id="@+id/txTerbitTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/txSubuhTime"
+        android:layout_alignLeft="@+id/txSubuhTime"
+        android:layout_alignStart="@+id/txSubuhTime" />
+
+    <TextView
+        android:id="@+id/txDzuhurTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/txDzuhur"
+        android:layout_alignBottom="@+id/txDzuhur"
+        android:layout_alignLeft="@+id/txTerbitTime"
+        android:layout_alignStart="@+id/txTerbitTime" />
+
+    <TextView
+        android:id="@+id/txAsharTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txAshar"
+        android:layout_alignLeft="@+id/txDzuhurTime"
+        android:layout_alignStart="@+id/txDzuhurTime"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txMaghribTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/txMaghrib"
+        android:layout_alignBottom="@+id/txMaghrib"
+        android:layout_alignLeft="@+id/txAsharTime"
+        android:layout_alignStart="@+id/txAsharTime" />
+
+    <TextView
+        android:id="@+id/txIsyaTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txIsya"
+        android:layout_alignLeft="@+id/txMaghribTime"
+        android:layout_alignStart="@+id/txMaghribTime"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/loader"
+        android:layout_alignTop="@+id/txSubuh"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
